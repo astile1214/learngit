@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int fib(int x)
+{
+	int a,b,c,i;
+	a=b=1;
+	if(x=1 || x=2)
+		c=1;
+	for(i=2;i<=x;i++)
+		{
+			c=a+b;
+			b=a;
+			a=c;
+		}
+	return c;
+}
+
+int main(void)
+{
+	while(1)
+	{
+		int x;
+		scanf("%d",&x);
+		printf("%d\n",fib(x) );
+	}
+	return 0;
+}
